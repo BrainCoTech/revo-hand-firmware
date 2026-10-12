@@ -93,6 +93,18 @@ Supported protocols: Modbus / Protobuf / RS-485 / CAN FD / EtherCAT
 
 ---
 
+### Revo 3
+
+Revo3 main-controller firmware is updated through the SDK OTA/DFU interface over Modbus RTU or CAN FD. Verify the product code, installed firmware version, and transport before updating. Keep device power and communication connected throughout the update.
+
+| Protocol | Firmware | Build time | Download | SHA-256 |
+|---------|---------|---------|---------|---------|
+| Modbus RTU / CAN FD | V0.1.2 | 2026-09-28 20:36 | [revo23-fw-V0.1.2-2609282036.bin](firmware/revo3/revo23-fw-V0.1.2-2609282036.bin) | `2a423832de5ccd8f0eed6c46d383d1037e46c30af8ba6138d0cabdf62a89c82a` |
+| Modbus RTU / CAN FD | V0.1.3 | 2026-10-12 09:34 | [revo23-fw-V0.1.3-2610120934.bin](firmware/revo3/revo23-fw-V0.1.3-2610120934.bin) | `72fe4770b30da3f0b08d167e3308c9de4dff9641e4d58704460ff6f86e37bb` |
+
+> [!WARNING]
+> These files are Revo3 main-controller firmware and must not be used on Revo 1 or Revo 2. Select exactly one image per update, then reconnect and verify the reported firmware version. Downgrading from V0.1.3 to V0.1.2 is allowed only when confirmed by the firmware release notes.
+
 ## Firmware Quick Reference
 
 | Firmware | Applicable Products |
@@ -104,6 +116,8 @@ Supported protocols: Modbus / Protobuf / RS-485 / CAN FD / EtherCAT
 | `Revo2Pro_V0.0.6_2508301541_ec.bin` | Revo 2 Advanced (Wrist) |
 | `Revo2EC_0.0.8_2510211419.bin` | Revo 2 Tactile (Wrist) |
 | `Revo2_V1.0.10.F.1_2510091755.bin` | Revo 2 Advanced / Tactile (Controller) |
+| `revo23-fw-V0.1.2-2609282036.bin` | Revo 3 main-controller firmware |
+| `revo23-fw-V0.1.3-2610120934.bin` | Revo 3 main-controller firmware |
 
 ---
 
